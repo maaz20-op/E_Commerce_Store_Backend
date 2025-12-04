@@ -39,6 +39,11 @@ app.use(cookieParser());
 
 
 // Enable CORS
+app.use(cors({
+  origin: "https://alkaram-cloths.vercel.app",
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"]
+}));
 
 
 // Security headers
