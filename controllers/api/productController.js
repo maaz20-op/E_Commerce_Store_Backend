@@ -46,7 +46,8 @@ export const getProducts = asyncHandler(async (req, res) => {
   const skip = (page - 1) * limit;
 
   // Total count for frontend info
-  const totalProducts = await ProductModel.countDocuments();
+  const totalProductsArr = await ProductModel.find();
+  const totalProducts = totalProductsArr.length;
 
   // Fetch paginated products
   const products = await ProductModel.find().skip(skip).limit(limit);
