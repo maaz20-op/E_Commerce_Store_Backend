@@ -39,12 +39,7 @@ app.use(cookieParser());
 
 
 // Enable CORS
-app.use(
-  cors({
-    origin: process.env.FRONTEND_URL, // frontend origin
-    credentials: true, // allow cookies
-  })
-);
+
 
 // Security headers
 app.use(
