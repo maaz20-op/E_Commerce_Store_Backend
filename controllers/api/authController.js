@@ -37,7 +37,6 @@ const user = await AuthModel.findById(newUser._id).select('-password');
 export const loginUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
   if (!email || !password)  return errorResponseApi(res, 400, "Data is missing")
- console.log(email, password)
   const user = await AuthModel.findOne({ email })
   if (!user) return errorResponseApi(res, 404, "Invalid credentials");
 
