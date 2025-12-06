@@ -32,7 +32,6 @@ import { OrderModel } from "./models/orderModel.js";
 // DataBase Connection Setup
 connectDB();
 
-
 // ------------------ Middlewares ------------------
 
 app.use(cookieParser());
@@ -40,7 +39,7 @@ app.use(cookieParser());
 
 // Enable CORS
 app.use(cors({
-  origin: "https://alkaram-cloths.vercel.app",
+  origin: "https://alkaram-collections.vercel.app",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"]
 }));

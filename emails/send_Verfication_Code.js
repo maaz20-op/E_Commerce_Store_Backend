@@ -23,7 +23,7 @@ export async function sendVerificationEmail(toEmail, code) {
   `;
 
   const mailOptions = {
-    from: `"Alkaram Cloths House" <${process.env.EMAIL_USER}>`,
+    from: `"Alkaram Collections" <${process.env.EMAIL_USER}>`,
     to: toEmail,
     subject: "Your Verification Code",
     html: htmlTemplate,

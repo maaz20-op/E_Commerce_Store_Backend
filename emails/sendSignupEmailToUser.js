@@ -3,7 +3,7 @@ import { transporter } from "../config/nodemailer.js";
 export async function sendSignUpEmailToUser(userEmail, userName) {
   try {
     const mailOptions = {
-      from: `"Alkaram Cloths House" <no-reply@alkaramcloths.com>`,
+      from: `"Alkaram Collections" <no-reply@alkaramcollections.com>`,
       to: userEmail,
       subject: "🎉 Welcome to Alkaram Cloths House!",
       html: `

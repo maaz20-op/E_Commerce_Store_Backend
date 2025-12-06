@@ -1,7 +1,7 @@
 import { transporter } from "../config/nodemailer.js";
 
 export async function notifyUserOnEmail(userEmail, userName, transactionId, payment) {
-  const shopName = "Alkaram Cloths";
+  const shopName = "Alkaram Collections";
 
   const subject = `Your Order is Confirmed – ${shopName}`;
 
